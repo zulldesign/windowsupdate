@@ -9,7 +9,7 @@ namespace MvcMusicStore.Controllers
 {
     public class StoreController : Controller
     {
-        DefaultConnection storeDB = new DefaultConnection();
+        db210beb3bff0344fb8bf4a3a800dda376Entities storeDB = new db210beb3bff0344fb8bf4a3a800dda376Entities();
 
         //
         // GET: /Store/
