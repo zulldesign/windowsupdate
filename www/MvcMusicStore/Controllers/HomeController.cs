@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MvcMusicStore.Models;
 
 namespace MvcMusicStore.Controllers
 {
@@ -11,23 +12,25 @@ namespace MvcMusicStore.Controllers
         //
         // GET: /Home/
 
+        db210beb3bff0344fb8bf4a3a800dda376Entities storeDB = new db210beb3bff0344fb8bf4a3a800dda376Entities();
+
         public ActionResult Index()
         {
-            var imageList = new
-         System.IO.DirectoryInfo(Server.MapPath("/SlideImages/")).GetFiles();
-            ViewBag.ImageList = imageList;
+            // Get most popular albums
+            var albums = GetTopSellingAlbums(5);
 
-            return View();
+            return View(albums);
         }
 
-        public ActionResult About()
+        private List<Album> GetTopSellingAlbums(int count)
         {
-            return View();
-        }
+            // Group the order details by album and return
+            // the albums with the highest count
 
-        public ActionResult Contact()
-        {
-            return View();
+            return storeDB.Albums
+                .OrderByDescending(a => a.OrderDetails.Count())
+                .Take(count)
+                .ToList();
         }
     }
 }
