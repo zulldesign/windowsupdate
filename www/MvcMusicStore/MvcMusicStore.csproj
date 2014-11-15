@@ -150,8 +150,26 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\HtmlHelpers.cs" />
+    <Compile Include="Models\AccountDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountDB.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Album.cs">
       <DependentUpon>StoreDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Application.cs">
+      <DependentUpon>AccountDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Artist.cs">
       <DependentUpon>StoreDB.tt</DependentUpon>
@@ -165,6 +183,9 @@
     <Compile Include="Models\Genre.cs">
       <DependentUpon>StoreDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Membership.cs">
+      <DependentUpon>AccountDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Movie.cs">
       <DependentUpon>StoreDB.tt</DependentUpon>
     </Compile>
@@ -177,6 +198,12 @@
     </Compile>
     <Compile Include="Models\OrderDetail.cs">
       <DependentUpon>StoreDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Profile.cs">
+      <DependentUpon>AccountDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Role.cs">
+      <DependentUpon>AccountDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Models\StoreDB.Context.cs">
@@ -193,6 +220,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>StoreDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>AccountDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\ShoppingCartRemoveViewModel.cs" />
@@ -251,6 +281,23 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>StoreDB.edmx</DependentUpon>
       <LastGenOutput>StoreDB.cs</LastGenOutput>
+    </Content>
+    <EntityDeploy Include="Models\AccountDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AccountDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\AccountDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AccountDB.edmx</DependentUpon>
+      <LastGenOutput>AccountDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\AccountDB.edmx.diagram">
+      <DependentUpon>AccountDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\AccountDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AccountDB.edmx</DependentUpon>
+      <LastGenOutput>AccountDB.cs</LastGenOutput>
     </Content>
     <None Include="readme.txt" />
     <None Include="Scripts\jquery-1.5.1-vsdoc.js" />
