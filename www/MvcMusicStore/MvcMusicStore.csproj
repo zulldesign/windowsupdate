@@ -422,6 +422,7 @@
     <Content Include="Views\PayPal\NotifyFromPaypal.cshtml" />
     <Content Include="Views\PayPal\RedirectFromPaypal.cshtml" />
     <Content Include="Views\PayPal\ValidateCommand.cshtml" />
+    <Content Include="Views\PayPal\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
