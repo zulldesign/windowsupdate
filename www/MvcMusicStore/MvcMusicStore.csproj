@@ -150,6 +150,7 @@
     <Compile Include="Controllers\HomesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OfficeController.cs" />
+    <Compile Include="Controllers\PaypalController.cs" />
     <Compile Include="Controllers\ShoppingCartController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Controllers\StoreManagerController.cs" />
@@ -173,7 +174,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AccountDB.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Album.cs">
       <DependentUpon>StoreDB.tt</DependentUpon>
     </Compile>
@@ -208,6 +208,7 @@
     <Compile Include="Models\OrderDetail.cs">
       <DependentUpon>StoreDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\PayPalModel.cs" />
     <Compile Include="Models\Profile.cs">
       <DependentUpon>AccountDB.tt</DependentUpon>
     </Compile>
@@ -417,6 +418,10 @@
     <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
     <Content Include="Views\Account\LogOn.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\PayPal\CancelFromPaypal.cshtml" />
+    <Content Include="Views\PayPal\NotifyFromPaypal.cshtml" />
+    <Content Include="Views\PayPal\RedirectFromPaypal.cshtml" />
+    <Content Include="Views\PayPal\ValidateCommand.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
