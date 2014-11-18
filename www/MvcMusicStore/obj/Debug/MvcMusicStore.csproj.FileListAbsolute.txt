@@ -25,3 +25,5 @@ C:\Users\User\Workspace\windowsupdate\www\MvcMusicStore\bin\System.Web.WebPages.
 C:\Users\User\Workspace\windowsupdate\www\MvcMusicStore\obj\Debug\MvcMusicStore.csprojResolveAssemblyReference.cache
 C:\Users\User\Workspace\windowsupdate\www\MvcMusicStore\obj\Debug\MvcMusicStore.dll
 C:\Users\User\Workspace\windowsupdate\www\MvcMusicStore\obj\Debug\MvcMusicStore.pdb
+C:\Users\User\Workspace\windowsupdate\www\MvcMusicStore\bin\EntityFramework.dll
+C:\Users\User\Workspace\windowsupdate\www\MvcMusicStore\bin\EntityFramework.xml
