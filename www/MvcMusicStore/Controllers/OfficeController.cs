@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Facebook;
+using Facebook.Web;
+using Facebook.Web.Mvc;
 using Microsoft.AspNet.Mvc.Facebook;
 using Microsoft.AspNet.Mvc.Facebook.Client;
 
